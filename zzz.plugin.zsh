@@ -35,10 +35,10 @@ EOF
 
   case "$(uname -s)" in
     'Linux')
-      echo systemctl suspend
+      systemctl suspend
       ;;
     'Darwin')
-      echo pmset sleepnow
+      pmset sleepnow
       ;;
   esac
 }
